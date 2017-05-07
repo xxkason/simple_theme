@@ -10,23 +10,23 @@
 	</head>
 	<body>
 		<header>
-			<nav class="navbar navbar-inverse navbar-fixed-top">
+			<nav class="navbar navbar-inverse navbar-static-top">
 				<div class="container-fluid">
 					<div class="navbar-header">
 						<a class="navbar-brand" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
+						<p class="navbar-text"><?php bloginfo('description'); ?></p>
 					</div>
 					<div class="navbar-right">
-						
-					</div>
-					<?php get_template_part('searchform'); ?>
-					<ul class="nav navbar-nav">
-						<li>
-							<a href="<?php bloginfo('atom_url'); ?>" data-toggle="tooltip" data-placement="top" title="订阅"><i class="fa fa-rss"></i></a>
-						</li>
-						<li>
-						<a href="<?php echo wp_login_url(); ?>" data-toggle="tooltip" data-placement="top" title="登录"><i class="fa fa-sign-in"></i></a>
-						</li>
-					</ul>
+						<?php get_template_part('searchform'); ?>
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="<?php bloginfo('atom_url'); ?>" data-toggle="tooltip" data-placement="top" title="订阅"><i class="fa fa-rss"></i></a>
+							</li>
+							<li>
+								<a href="<?php echo wp_login_url(); ?>" data-toggle="tooltip" data-placement="top" title="登录"><i class="fa fa-sign-in"></i></a>
+							</li>
+						</ul>
+					</div>	
 				</div><!-- /.container-fluid -->
 			</nav>
 		</header>
