@@ -24,9 +24,9 @@
 					<div class="collapse navbar-collapse" id="myNavbar">
 						<ul class="nav navbar-nav">
 							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php _e(日志类别); ?> <span class="fa fa-caret-right"></span></a>
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php _e(日志类别); ?> <span class="fa fa-caret-down"></span></a>
 								<ul class="dropdown-menu">
-									<?php wp_list_categories('title_li='); ?>
+									<?php wp_list_categories('depth=1&title_li='); ?>
 								</ul>
 							</li>
 						</ul>

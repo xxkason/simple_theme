@@ -1,3 +1,41 @@
+
+html{ font-size:62.5%;}
 body {
+	/*padding-top: 7rem;*/
 	background: #c9c9c9;
+}
+
+body, a, input, button, select {
+	font-family: Verdana, "华文楷体", "楷体";
+}
+
+.dropdown:hover .dropdown-menu {
+	display: block;   
+}
+
+.dropdown-menu{
+	background-color: #222;
+}
+
+.dropdown-menu>li>a {
+    color: #9d9d9d;
+}
+/*.contents-container {
+	margin: 0 6rem;
+}*/
+
+/*.panel-title {
+	font-size: 2rem;
+	font-weight: bold;
+	display: inline-block;
+	margin-right: 1rem;
+}
+
+.panel-body {
+	font-size: 1.6rem;
+}*/
+
+footer {
+	font-weight: bold;
+	text-align: center;
 }
