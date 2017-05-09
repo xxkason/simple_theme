@@ -21,6 +21,10 @@ body, a, input, button, select {
     color: #9d9d9d;
 }
 
+.dropdown-menu .badge {
+	float: right;
+}
+
 .page-nav a {
 	position: fixed;
 	top: 33vh;
@@ -57,7 +61,22 @@ body, a, input, button, select {
 	font-size: 1.6rem;
 }
 
+hr {
+	background-color: #222;
+	height: 3px;
+	color: #222;
+	border: none;
+}
+
 footer {
+	font-size: 1.6rem;
 	font-weight: bold;
 	text-align: center;
+	background-color: #222;
+	color: #fff;
+}
+
+footer p {
+	padding: 0;
+	margin: 0;
 }
