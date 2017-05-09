@@ -20,11 +20,33 @@ body, a, input, button, select {
 .dropdown-menu>li>a {
     color: #9d9d9d;
 }
-/*.contents-container {
-	margin: 0 6rem;
-}*/
 
-/*.panel-title {
+.page-nav a {
+	position: fixed;
+	top: 33vh;
+	width: 3rem;
+	height: 33vh;
+	background-color: #222;
+	color: #fff;
+	font-size: 3rem;
+	text-align: center;
+	padding-top: 15vh;
+	text-decoration: none;
+}
+
+.page-nav a {
+	display: block;
+}
+
+.page-nav-pre a {
+	left: 0;
+}
+
+.page-nav-next a {
+	right: 0;
+}
+
+.panel-title {
 	font-size: 2rem;
 	font-weight: bold;
 	display: inline-block;
@@ -33,7 +55,7 @@ body, a, input, button, select {
 
 .panel-body {
 	font-size: 1.6rem;
-}*/
+}
 
 footer {
 	font-weight: bold;
