@@ -37,7 +37,13 @@
 									<a href="<?php bloginfo('atom_url'); ?>" data-toggle="tooltip" data-placement="top" title="订阅"><i class="fa fa-rss"></i></a>
 								</li>
 								<li>
-									<a href="<?php echo wp_login_url(); ?>" data-toggle="tooltip" data-placement="top" title="登录"><i class="fa fa-sign-in"></i></a>
+									<?php
+										if (is_user_logged_in()){
+											echo '<a href=' . wp_logout_url() . ' data-toggle="tooltip" data-placement="top" title="注销"><i class="fa fa-sign-out"></i></a>'
+										} else {
+											echo '<a href=' . wp_login_url() . ' data-toggle="tooltip" data-placement="top" title="登录"><i class="fa fa-sign-in"></i></a>'
+										}
+									?>
 								</li>
 							<!-- <li>
 								<a href="<?php echo wp_registration_url(); ?>" data-toggle="tooltip" data-placement="top" title="注册"><i class="fa fa-user-plus"></i></a>

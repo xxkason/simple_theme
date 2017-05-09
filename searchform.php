@@ -1,4 +1,4 @@
-<form class="navbar-form navbar-left" method="get" action="<?php echo home_url(); ?>" role="search">
+<form class="navbar-form navbar-left" method="get" action="<?php echo home_url(); ?>">
 	<div class="input-group">
 		<input type="search" class="form-control" placeholder="<?php _e('搜索'); ?>">
 		<span class="input-group-btn">
