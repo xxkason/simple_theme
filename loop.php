@@ -13,15 +13,15 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<a data-toggle="collapse" data-parent="#posts-list" href="#collapseOne" href="<?php the_permalink(); ?>">
+								<a data-toggle="collapse" data-parent="#posts-list" href="<?php echo('#post-'.$i) ?>">
 									<?php the_title(); ?>
 								</a>
 								<a href="<?php the_permalink(); ?>">
-									<span class="fa fa-chevron-left"></span>
+									<span class="fa fa-external-link-square"></span>
 								</a>
 							</h3>
 						</div>
-						<div id="collapseTwo" class="panel-collapse collapse">
+						<div id="<?php echo('post-'.$i) ?>" class="panel-collapse collapse">
 						<div class="panel-body">
 							<?php 
 								if (is_search() || is_archive())
