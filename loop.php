@@ -4,20 +4,24 @@
 		<div class="col-md-1 col-lg-1 page-nav page-nav-pre">
 			<?php previous_posts_link( '<span class="fa fa-chevron-left"></span>' , 0 ); ?>
 		</div>
-
+		<div class="panel-group" id="posts-list">
 		<div class="col-md-10 col-lg-10">
-			<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+			<?php if (have_posts()): $i = 0; while (have_posts()) : the_post(); $i++;?>
 
 				<!-- article -->
 				<article>
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<a href="<?php the_permalink(); ?>">
+								<a data-toggle="collapse" data-parent="#posts-list" href="#collapseOne" href="<?php the_permalink(); ?>">
 									<?php the_title(); ?>
+								</a>
+								<a href="<?php the_permalink(); ?>">
+									<span class="fa fa-chevron-left"></span>
 								</a>
 							</h3>
 						</div>
+						<div id="collapseTwo" class="panel-collapse collapse">
 						<div class="panel-body">
 							<?php 
 								if (is_search() || is_archive())
@@ -25,6 +29,7 @@
 								else
 									the_content();
 							?>
+						</div>
 						</div>
 						<div class="panel-footer">
 							<span class="date"><?php the_date('', '<span class="fa fa-calendar-o"></span>&nbsp', '&nbsp|'); ?></span>
@@ -48,6 +53,7 @@
 			<!-- /article -->
 
 		<?php endif; ?>
+	</div>
 	</div>
 
 	<div class="col-md-1 col-lg-1 page-nav page-nav-next">
